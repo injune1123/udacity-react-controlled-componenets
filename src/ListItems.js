@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const ShoppingListItems = (props) => (
   <div>
@@ -9,4 +10,7 @@ const ShoppingListItems = (props) => (
   </div>
 );
 
+ShoppingListItems.propTypes = {
+  items: PropTypes.array.isRequired,
+};
 export default ShoppingListItems;
